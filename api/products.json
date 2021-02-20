@@ -1,0 +1,224 @@
+[
+    {
+        "product_id": "P0-A1",
+        "product_main_img": "./assets/products/P0-A1/images/main.png",
+        "product_slide_img": "./assets/products/P0-A1/images/slide.jpg",
+        "product_title": "Wooden Box",
+        "product_description": "Lorem ipsum dolor set amet contectutor <br><br> when it is lorem ipsum it is lorem ipsumdolor set amet contectutor.",
+        "product_video": "./assets/products/P0-A1/videos/vid.mp4",
+        "product_3D": "./assets/products/P0-A1/model/Wooden_box.glb",
+        "podcast": "./assets/products/P0-A1/Audio/vid.mp3",
+        "rate": 4,
+        "is_homepage": true,
+        "is_featured": true,
+        "number_of_reviews": 8,
+        "product_stock": [
+            {
+                "stock_count": 2,
+                "product_price": 30.25,
+                "product_discount_rate": 10,
+                "discount_from": "2021-02-21",
+                "discount_till": "2021-03-21"
+            }
+        ],
+        "product_specs": [
+            {
+                "width": 115,
+                "height": 35,
+                "length": 70,
+                "weight": 120
+            }
+        ],
+        "product_materials": [
+            {
+                "category_id": "CA-01",
+                "category_name": "Wood"
+            },
+            {
+                "category_id": "CA-02",
+                "category_name": "Metal"
+            },
+            {
+                "category_id": "CA-03",
+                "category_name": "Resin"
+            },
+            {
+                "category_id": "CA-04",
+                "category_name": "Leather"
+            }
+        ],
+        "products_gallery": [
+            {
+                "photo_id": "P0-A1Gal01",
+                "photo_link": "./assets/products/P0-A1/images/JB1.jpg"
+            },
+            {
+                "photo_id": "P0-A1Gal02",
+                "photo_link": "./assets/products/P0-A1/images/JB2.jpg"
+            },
+            {
+                "photo_id": "P0-A1Gal03",
+                "photo_link": "./assets/products/P0-A1/images/JB3.jpg"
+            }
+        ],
+        "products_colors": [
+            {
+                "color_id": "CO-01",
+                "color_data": "./assets/colors/CO-01.jpg"
+            },
+            {
+                "color_id": "CO-02",
+                "color_data": "./assets/colors/CO-02.jpg"
+            },
+            {
+                "color_id": "CO-03",
+                "color_data": "#ff0000"
+            }
+        ]
+    },
+    {
+        "product_id": "P0-A2",
+        "product_main_img": "./assets/products/P0-A2/images/main.png",
+        "product_slide_img": "./assets/products/P0-A2/images/slide.jpg",
+        "product_title": "The Elephant clock",
+        "Product_description": "Lorem ipsum dolor set amet contectutor <br><br> when it is lorem ipsum it is lorem ipsumdolor set amet contectutor.",
+        "product_video": "./assets/products/P0-A2/videos/vid.mp4",
+        "product_3D": "./assets/products/P0-A2/model/Wooden_box.glb",
+        "rate": 4,
+        "is_homepage": true,
+        "is_featured": true,
+        "number_of_reviews": 8,
+        "product_stock": [
+            {
+                "stock_count": 2,
+                "product_price": 40.55
+            }
+        ],
+        "product_specs": [
+            {
+                "width": 115,
+                "height": 35,
+                "length": 70,
+                "weight": 120
+            }
+        ],
+        "product_coupons": [
+            {
+                "coupon_id": 1,
+                "coupon_name": "coup01-010",
+                "coupon_discount_rate": 10,
+                "active": true
+            },
+            {
+                "coupon_id": 2,
+                "coupon_name": "coup02-010",
+                "coupon_discount_rate": 15,
+                "active": true
+            }
+        ],
+        "categories": [
+            {
+                "category_id": "CA-01",
+                "category_name": "Wood"
+            },
+            {
+                "category_id": "CA-02",
+                "category_name": "Metal"
+            }
+        ],
+        "products_gallerty": [
+            {
+                "photo_id": "P0-A2Gal01",
+                "photo_link": "./assets/products/P0-A2/images/TEC1.jpg"
+            },
+            {
+                "photo_id": "P0-A2Gal02",
+                "photo_link": "./assets/products/P0-A2/images/TEC2.jpg"
+            },
+            {
+                "photo_id": "P0-A2Gal03",
+                "photo_link": "./assets/products/P0-A2/images/TEC3.jpg"
+            }
+        ],
+        "products_colors": [
+            {
+                "color_id": "CO-04",
+                "color_data": "./assets/colors/CO-03.jpg"
+            },
+            {
+                "color_id": "CO-05",
+                "color_data": "./assets/colors/CO-04.jpg"
+            }
+        ]
+    },
+    {
+        "product_id": "P0-A3",
+        "product_main_img": "./assets/products/P0-A3/images/main.png",
+        "product_slide_img": "./assets/products/P0-A1/images/slide.jpg",
+        "product_title": "Custom Chef Knife",
+        "Product_description": "Lorem ipsum dolor set amet contectutor <br><br> when it is lorem ipsum it is lorem ipsumdolor set amet contectutor.",
+        "product_video": "./assets/products/P0-A3/videos/vid.mp4",
+        "product_3D": "./assets/products/P0-A3/model/Elephant_clock.glb",
+        "rate": 4.5,
+        "is_homepage": true,
+        "is_featured": true,
+        "number_of_reviews": 13,
+        "product_stock": [
+            {
+                "stock_count": 2,
+                "product_price": 120.90,
+                "product_discount_rate": 10,
+                "discount_from": "2021-02-21",
+                "discount_till": "2021-03-21"
+            }
+        ],
+        "product_specs": [
+            {
+                "width": 115,
+                "height": 35,
+                "length": 70,
+                "weight": 120
+            }
+        ],
+        "product_coupons": [
+            {
+                "coupon_id": 1,
+                "coupon_name": "coup01-010",
+                "coupon_discount_rate": 10,
+                "active": true
+            },
+            {
+                "coupon_id": 2,
+                "coupon_name": "coup02-010",
+                "coupon_discount_rate": 15,
+                "active": true
+            }
+        ],
+        "categories": [
+            {
+                "category_id": "CA-01",
+                "category_name": "Wood"
+            }
+        ],
+        "products_gallerty": [
+            {
+                "photo_id": "P0-A3Gal01",
+                "photo_link": "./assets/products/P0-A2/images/WB1.jpg"
+            },
+            {
+                "photo_id": "P0-A3Gal02",
+                "photo_link": "./assets/products/P0-A2/images/WB2.jpg"
+            },
+            {
+                "photo_id": "P0-A3Gal03",
+                "photo_link": "./assets/products/P0-A2/images/WB3.jpg"
+            }
+        ],
+        "products_colors": [
+            {
+                "color_id": "CO-01",
+                "color_data": "./assets/colors/CO-01.jpg"
+            }
+        ]
+    }
+]

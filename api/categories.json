@@ -1,0 +1,37 @@
+[
+    {
+        "category_id": "CA-01",
+        "category_name": "Wood",
+        "category_image": "./assets/categories/wood.jpg"
+    },
+    {
+        "category_id": "CA-02",
+        "category_name": "Metal",
+        "category_image": "./assets/categories/metal.jpg"
+    },
+    {
+        "category_id": "CA-03",
+        "category_name": "Resin",
+        "category_image": "./assets/categories/resin.jpg"
+    },
+    {
+        "category_id": "CA-04",
+        "category_name": "Leather",
+        "category_image": "./assets/categories/leather.jpg"
+    },
+    {
+        "category_id": "CA-05",
+        "category_name": "Concrete",
+        "category_image": "./assets/categories/concrete.jpg"
+    },
+    {
+        "category_id": "CA-06",
+        "category_name": "Soaps",
+        "category_image": "./assets/categories/soap.jpg"
+    },
+    {
+        "category_id": "CA-07",
+        "category_name": "Tech",
+        "category_image": "./assets/categories/tech.jpg"
+    }
+]

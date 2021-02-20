@@ -1,0 +1,34 @@
+[
+    {
+        "product_id": "P0-A1",
+        "product_main_img": "./assets/products/P0-A1/images/main.png",
+        "product_slide_img": "./assets/products/P0-A1/images/slide.jpg",
+        "product_title": "Wooden Box",
+        "rate": 4,
+        "number_of_reviews": 8,
+        "product_stock": [
+            {
+                "stock_count": 2,
+                "product_price": 30.25,
+                "product_discount_rate": 10,
+                "discount_from": "2021-02-21",
+                "discount_till": "2021-03-21"
+            }
+        ]
+    },
+
+    {
+        "product_id": "P0-A2",
+        "product_main_img": "./assets/products/P0-A2/images/main.png",
+        "product_slide_img": "./assets/products/P0-A2/images/slide.jpg",
+        "product_title": "The Elephant Clock",
+        "rate": 4.5,
+        "number_of_reviews": 13,
+        "product_stock": [
+            {
+                "stock_count": 1,
+                "product_price": 40.55
+            }
+        ]
+    }
+]
