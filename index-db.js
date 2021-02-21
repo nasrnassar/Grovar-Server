@@ -14,10 +14,10 @@ app.use(express.json());
 //Create product
 app.post("/grovar/api/products", async(req, res) => {
 	try{
-		const {title, video, description, glbmodel, price, discount, width, height, length, weight} = req.body;
+		const {title, video, description, glbmodel, rate, number_of_reviews} = req.body;
 		const newProduct = await pool.query(
-			"INSERT INTO products (title, video, description, glbmodel, price, discount, width, height, length, weight) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)",
-			[title, video, description, glbmodel, price, discount, width, height, length, weight]
+			"INSERT INTO products (title, video, description, glbmodel, rate, number_of_reviews) VALUES ($1,$2,$3,$4,$5,$6)",
+			[title, video, description, glbmodel, rate, number_of_reviews]
 		);
 
 		res.json(newProduct.rows[0]);
@@ -30,7 +30,7 @@ app.post("/grovar/api/products", async(req, res) => {
 app.get("/grovar/api/products", async(req, res) => {
 	try{
 		const allProducts = await pool.query(
-			"SELECT product_id, title, video, description, price, discount FROM products"
+			"SELECT product_id, title, video, description FROM products"
 		);
 
 		res.json(allProducts.rows);
@@ -46,18 +46,26 @@ app.get("/grovar/api/products/:id", async(req, res) => {
 		const product = await pool.query(
 			`SELECT
 			products.product_id,
-			products.title,
-			products.video,
-			products.description,
-		    products.price,
-		    products.discount,
-		    products.width,
-		    products.height,
-		    products.length,
-		    products.weight,
-		    products.glbmodel
+			products.main_img as product_main_img,
+			products.slide_img as product_slide_img,
+			products.title as product_title,
+			products.description as product_description,
+			products.video as product_video,
+		    products.glbmodel as product_3D,
+		    products.podcast,
+		    products.rate,
+		    products.number_of_reviews,
+		    products.is_homepage,
+		    products.is_featured
 			FROM products
 			WHERE products.product_id = $1`,
+			[id]
+		)
+
+		const productSpecs = await pool.query(
+			`SELECT
+			width, height, length, weight			
+			FROM productSpecs WHERE product_id = $1`,
 			[id]
 		)
 
@@ -82,6 +90,16 @@ app.get("/grovar/api/products/:id", async(req, res) => {
 			[id]
 		)
 
+		const productStock = await pool.query(
+			`SELECT
+			stock_count, product_price, product_discount_rate, discount_from, discount_till			
+			FROM productStock WHERE product_id = $1`,
+			[id]
+		)
+
+		
+		product.rows[0].product_stock = productStock.rows;
+		product.rows[0].products_specs = productSpecs.rows;
 		product.rows[0].products_gallery = productGallery.rows;
 		product.rows[0].product_materials = productMaterials.rows;
 		product.rows[0].products_colors = productColors.rows;
